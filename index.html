@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    
+    <script>
+
+    
+    //============== Chap # 14-16 ===========//
+        /*
+        Ex-1
+
+        var arr_stu_name=[];
+        */
+
+
+        /*
+        Ex-3
+
+        var arr1=["Faaiz","Talha","Huzaifa","Natesh"]
+        alert(arr1);
+        */
+
+
+        /*
+        Ex-4
+
+        var arr_number=[23,12,34,27];
+        */
+
+
+        /*
+        Ex-5
+
+        var arr_boolean=[true,false];
+        */
+
+
+        /*
+        Ex-6
+
+        var arr_mixed=["Huzaifa",27,98,"Syed",89];
+        */
+
+
+
+        /*
+        Ex-7
+
+       var arr1=["SSC","HSC","BCS","BS","BCOM","MS","M.Phil","Ph.d"];
+        document.write("Qualifications:"+"<br>");
+        
+        for(var a=0;a<arr1.length;a++)
+        {
+            document.writeln((1+a)+")"+arr1[a]);
+            document.write("<br>");
+           
+        }
+        */ 
+
+
+        /*
+        Ex-8
+
+        var sname=["Faaiz Shaikh","Talha Kaimkhani","Syed Huzaifa"];
+        var smarks=[398,430,390];
+        var total=500;
+
+        for(var a=0;a<sname.length;a++)
+        {
+            var per=(smarks[a]/total)*100;
+            document.write("Score of "+sname[a]+" is "+smarks[a]+".Percentage:"+per+"%"+"<br>");
+        }
+        */
+
+
+
+       
+        /*
+        Ex-9
+        */
+
+        /*
+        var org_arr=["Green","Purple","Orange","Grey","Pink"];
+        document.write("Original Colour Array: ");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]);
+        }
+        */
+
+
+        /*
+
+        Update-a
+
+        */
+        
+        /*
+        var upd_a = prompt("What color you wants to add to the beginning", "<name goes here>");
+        
+        org_arr.unshift(upd_a);
+        if(upd_a!=null)
+        {
+            document.write("<br>"+"<br>"+"Colour Array with Update_a:(New element added at start)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]);
+            
+        }
+        }
+        */
+
+
+
+         /*
+        
+        Update-b
+
+        */
+
+        /*
+        var upd_b = prompt("What color you wants to add to the end", "<name goes here>");
+        
+        org_arr.push(upd_b);
+        if(upd_b!=null)
+        {
+            document.write("<br>"+"<br>"+"Colour Array with Update_b:(New element added at end)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]);
+        }
+        }
+        */
+
+
+               
+           /*
+        
+        Update-c
+
+        */
+
+        /*
+        var upd_c_a = prompt("Add another colour at beginning", "<name goes here>");
+        var upd_c_b = prompt("Add another colour at beginning", "<name goes here>");
+        org_arr.unshift(upd_c_a);
+        org_arr.unshift(upd_c_b);
+        if(upd_c_a!=null&&upd_c_b!=null)
+        {
+            document.write("<br>"+"<br>"+"Colour Array with Update_c:(Two new elements added at start)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]);
+            
+        }
+        }
+        */
+
+
+           /*
+        
+        Update-d
+
+        */
+
+        /*
+        org_arr.shift();
+        document.write("<br>"+"<br>"+"Colour Array with Update_d:(First element deleted!)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]);
+            
+        }
+        */
+
+
+
+         /*
+        
+        Update-e
+
+        */
+
+        /*
+        org_arr.pop();
+        document.write("<br>"+"<br>"+"Colour Array with Update_e:(Last element is deleted!)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]); 
+        }
+        */
+
+
+        /*
+        
+        Update-f
+
+        */
+
+        /*
+        var upd_f_a=prompt("Enter index where you want to enter element","enter here");
+        var upd_f_b=prompt("Enter element want to enter","enter here");
+        org_arr.splice(upd_f_a,0,upd_f_b);
+        document.write("<br>"+"<br>"+"Colour Array with Update_f:(Another element added at specific loc)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]); 
+        }
+        */
+
+
+          /*
+        
+        Update-g
+
+        */
+
+        /*
+        var upd_g_a=prompt("Enter index from where you want to delete element'(s)","enter here");
+        var upd_g_b=prompt("Enter number of element'(s) want to remove","enter here");
+        org_arr.splice(upd_g_a,upd_g_b);
+        document.write("<br>"+"<br>"+"Colour Array with Update_g:( Element deleted from specific loc)");
+        for(var a=0;a<org_arr.length;a++)
+        {
+            document.write("<br>"+org_arr[a]); 
+        }        
+
+        console.clear;
+        */
+
+
+/*
+        Ex-10
+
+        var sscores=[320,230,480,120];
+        document.write("Scores of Students :");
+        for(var a=0;a<sscores.length;a++)
+        {   
+            if(a!=sscores.length-1)
+            document.write(sscores[a]+",");
+            else
+            document.write(sscores[a]);
+        }
+
+        for(var a=0;a<sscores.length;a++)
+        {
+            for(var b=a+1;b<sscores.length;b++)
+            {
+                if(sscores[a]>sscores[b])
+                {
+                    var temp1=sscores[a];
+                    var temp2=sscores[b];
+
+                    sscores[b]=temp1;
+                    sscores[a]=temp2;
+                }
+            }
+        }
+        document.write("<br>");
+        document.write("Ordered Scores of Students :");
+        for(var a=0;a<sscores.length;a++)
+        {
+            if(a!=sscores.length-1)
+            document.write(sscores[a]+",");
+            else
+            document.write(sscores[a]);
+        }
+        */
+
+
+
+
+        /*
+        Ex-11
+
+        var cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+        document.write("Cities List:"+"<br>");
+        for(var a=0;a<cities.length;a++)
+        {
+            if(a!=cities.length-1)
+            document.write(cities[a]+",");
+            else
+            document.write(cities[a]);
+        }
+        var selected_cities=cities.splice(1,3);
+        document.write("<br>"+"Selected Cities List:"+"<br>");
+        for(var a=0;a<cities.length;a++)
+        {
+            if(a!=cities.length-1)
+            document.write(cities[a]+",");
+            else
+            document.write(cities[a]);
+        }
+        */
+
+
+
+ /*
+        Ex-12
+
+        var arr1=["This","is","my","cat"];
+        document.write("Array:"+"<br>");
+        for(var a=0;a<arr1.length;a++)
+        {
+            if(a!=arr1.length-1)
+            document.write(arr1[a]+",");
+            else
+            document.write(arr1[a]);
+        }
+        document.write("<br>"+"String:"+"<br>");
+        var s1=arr1.join(" ");
+        document.write(s1);
+        */
+
+        
+        /*
+        var arr1=["A","B","C","D"];
+        document.write(arr1+"<br>");
+        arr1.pop();
+        document.write(arr1+"<br>");
+        arr1.push("E");
+        document.write(arr1+"<br>");
+        arr1.shift();
+        document.write(arr1+"<br>");
+        arr1.unshift("Y");
+        document.write(arr1+"<br>");
+        */
+
+
+        /*
+
+        Ex-13
+        
+        */
+
+        /*
+        var arr1=new Array();
+        arr1.unshift("Keyboard");
+        arr1.unshift("Mouse");
+        arr1.unshift("Printer");
+        arr1.unshift("Monitor");
+        alert(arr1.pop());
+        alert(arr1.pop());
+        alert(arr1.pop());
+        alert(arr1.pop());
+        */
+
+        /*
+
+        Ex-14
+        
+        */
+
+        /*
+        var arr1=new Array();
+        arr1.push("Keyboard");
+        arr1.push("Mouse");
+        arr1.push("Printer");
+        arr1.push("Monitor");
+        alert(arr1.pop());
+        alert(arr1.pop());
+        alert(arr1.pop());
+        alert(arr1.pop());
+        */
+
+
+//============= Chap # 17-20 ==============//
+
+ /*
+
+        Ex-1
+
+       var arr1 = [ [],[],];
+       arr1=[["Syed Huzaifa",22],["Faaiz Shaikh",22]];
+
+        */
+
+
+
+        /*
+        
+        Ex-2
+
+        var num_arr=[[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+
+        for(var a=0;a<3;a++)
+        {
+            for(var b=0;b<4;b++)
+            {
+                document.write(num_arr[a][b]+"&nbsp&nbsp&nbsp");
+            }
+            document.write("<br>");
+        }
+
+        */
+
+
+
+        /*
+        
+        Ex-3
+
+        for(var a=1;a<=10;a++)
+        {
+            document.write(a+"<br>");
+        }
+
+        */
+
+
+
+
+        /*
+        
+        Ex-4
+        
+        var num=prompt("Enter a number to show its multiplication table","Enter here...");
+        var len1=prompt("Enter length multiplication table","Enter here...");
+
+        document.write("Multiplication table of "+num+" Length "+len1+"<br>");
+        for(a=1;a<=len1;a++)
+        {
+            document.write(num+" "+"x"+" "+a+"="+" "+num*a+"<br>");
+        }
+
+        */
+
+
+
+
+        /*
+        
+        Ex-5
+        
+        var fruits=["apple","banana","mango","orange","strawberry"];
+
+        for(var a=0;a<fruits.length;a++)
+        {
+            document.write("Element at index "+a+" is "+fruits[a]+"<br>");
+        }
+
+        */
+        
+
+
+        /*
+        
+        Ex-6
+    
+        document.write("Counting:");
+        for(var a=1;a<=15;a++)
+        {   
+            if(a!=15)
+            document.write(a+",");
+            else
+            document.write(a);
+        }
+        
+        document.write("<br>"+"Reverse Counting:");
+        for(var a=10;a>=1;a--)
+        {   
+            if(a!=1)
+            document.write(a+",");
+            else
+            document.write(a);
+        }
+        
+        document.write("<br>"+"Even:");
+        for(var a=0;a<=20;a=a+2)
+        {   
+            if(a!=20)
+            document.write(a+",");
+            else
+            document.write(a);
+        }
+        document.write("<br>"+"Odd:");
+        for(var a=1;a<=19;a=a+2)
+        {   
+            if(a!=19)
+            document.write(a+",");
+            else
+            document.write(a);
+        }
+        document.write("<br>"+"Series:");
+        for(var a=2;a<=20;a=a+2)
+        {   
+            if(a!=20)
+            document.write(a+"k"+",");
+            else
+            document.write(a+"k");
+        }
+
+        */
+
+
+
+
+        /*
+
+        Ex-7        
+
+        var temp=0;
+        var bakery=["cake","apple pie","cookie","chips","patties"];
+        var check=prompt("Welcome to MyNewBakers....What do you want to order Sir/Mam","Type.....");
+        for(var a=0;a<bakery.length;a++)
+        {
+            if(check.toLowerCase()==bakery[a])
+            {
+                document.write(bakery[a]+" is "+"available at index "+a+" in our bakery.");
+                temp++;
+            }
+        }
+        if(temp==0)
+        document.write("We are sorry "+check+" is not available in our bakery.");
+
+        */
+
+
+
+
+        /*
+        
+        Ex-8
+
+        var num=[24,53,78,91,12];
+        var temp=0;
+        for(var a=0;a<num.length;a++)
+        {
+            if(num[a]>temp)
+            temp=num[a];
+        }
+        document.write("Array items :"+num+"<br>");
+        document.write("The Largest number is : "+temp);
+
+        */
+
+
+
+        /*
+        
+        Ex-9
+        
+        var num=[24,53,78,91,12];
+        var temp1=0;
+        var temp2=0;
+        document.write("Array items :"+num+"<br>");
+        for(var a=0;a<num.length;a++)
+        {
+            for(var b=a+1;b<num.length;b++)
+            {
+                if(num[a]>num[b])
+                {
+                    var temp1=num[a];
+                    var temp2=num[b];
+
+                    num[b]=temp1;
+                    num[a]=temp2;
+                }
+            }
+        }
+        
+        document.write("The Smallest number is : "+num[0]);
+        
+        */
+        
+
+
+        /*
+        
+        Ex-10
+        
+        
+        for(var a=5;a<=100;a=a+5)
+        {
+            if(a!=100)
+            document.write(a+",");
+            else
+            document.write(a);
+        }
+
+        */
+
+
+   </script>
+
+
+</body>
+</html>
